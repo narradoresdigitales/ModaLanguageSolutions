@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Moda Language Solutions</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>Moda Language Solutions</h1>
+    <p>Professional Translation Services</p>
+  </header>
+
+  <section class="profile">
+    <h2>About Us</h2>
+    <p>
+      We provide accurate and professional translation services for businesses
+      and individuals worldwide.
+    </p>
+  </section>
+
+  <section class="contact">
+    <h2>Request a Translation</h2>
+
+    <form name="translation-request"
+          method="POST"
+          data-netlify="true"
+          enctype="multipart/form-data"
+          action="/success.html">
+
+      <input type="hidden" name="form-name" value="translation-request">
+
+      <label>Name</label>
+      <input type="text" name="name" required>
+
+      <label>Email</label>
+      <input type="email" name="email" required>
+
+      <label>Language Pair</label>
+      <input type="text" name="language" placeholder="e.g. English to Spanish" required>
+
+      <label>Message</label>
+      <textarea name="message"></textarea>
+
+      <label>Upload Document</label>
+      <input type="file" name="file" required>
+
+      <button type="submit">Submit Request</button>
+    </form>
+
+  </section>
+
+</body>
+</html>
