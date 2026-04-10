@@ -23,13 +23,13 @@
   <section class="contact">
     <h2>Request a Translation</h2>
 
-    <form name="translation-request"
-          method="POST"
-          data-netlify="true"
-          enctype="multipart/form-data"
-          action="/success.html">
+    <form action="https://api.web3forms.com/submit" method="POST">
 
-      <input type="hidden" name="form-name" value="translation-request">
+      <!-- Web3Forms Access Key -->
+      <input type="hidden" name="access_key" value="aa9cd492-a4d0-45b2-a949-5c212130c157">
+
+      <!-- Optional -->
+      <input type="hidden" name="subject" value="New Translation Request - Moda Language Solutions">
 
       <label>Name</label>
       <input type="text" name="name" required>
@@ -43,10 +43,8 @@
       <label>Message</label>
       <textarea name="message"></textarea>
 
-      <label>Upload Document</label>
-      <input type="file" name="file" required>
-
       <button type="submit">Submit Request</button>
+
     </form>
 
   </section>
